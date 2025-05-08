@@ -33,6 +33,8 @@ body{
 .left{
     width:50%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -49,10 +51,19 @@ body{
     margin-bottom: 30px;
 
 }
+.buttons{
+    align-self: flex-end;
+    display: flex;
+    width: 330px;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.buttons a{
+    text-decoration: none;
+}
 
 button{
     display: block;
-    position: absolute;
     right: 0px;
     height: 35px;
     padding: 7px;
