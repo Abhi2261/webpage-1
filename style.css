@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
+
 body{
     height: 100vh;
     background-color: black;
@@ -13,6 +15,8 @@ body{
     display: flex;
     justify-content: center;
 }
+
+/* login page  */
 .containor{
     width: 100%;
     padding: 30px;
@@ -80,6 +84,68 @@ button{
     font-weight: 100;
     padding-left:15px ;
     
+}
+
+/* registration page  */
+
+/* login-containor */
+.registration-body{
+    align-items: center;
+}
+.login-box{
+    min-width: 400px;
+    max-width: 500px;
+    max-height: 700px;
+    padding: .9rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    
+}
+
+.login-box form{
+    padding: 10px;
+}
+
+.login-box img{ 
+    width: 200px;
+
+}
+.login-box h1{
+    font-size: 1rem;
+    text-align: left;
+}
+.logo{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.login-items{
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.checkbox-postion{
+    text-align: right;
+    padding-top: 1rem;
+    
+}
+
+.register-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.login-redirect{
+    margin-top: .8rem;
+    padding: 1rem;
+}
+.login-redirect a{
+    text-decoration: none;
+    color: rgb(0, 98, 255);
+    font-weight: bold;
 }
 
 
