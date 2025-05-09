@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  background-image: url("./images/home-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-box {
+  min-width: 400px;
+  min-height: 600px;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  /* padding: 30px;  */
+  /* intead of hard code it, using rem instead : 2 rem */
+  text-align: center;
+  border-radius: 10px;
+  /* use rem */
+}
+.login-box img {
+  width: 200px;
+  /* use rem or leverage the flex box property */
+  padding-bottom: 40px;
+  /* use rem */
+}
+.login-box form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-box form input {
+  height: 25px;
+}
+
+.loginitems {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  /* use rem */
+}
+.login-box form span {
+  text-align: right;
+}
+
+.login-box button {
+  width: 150px;
+  height: 30px;
+  align-self: center;
+  border: none;
+  border-radius: 40px;
+  background-color: rgb(8, 162, 228);
+}
+.style1 {
+  border: 2px solid rgb(152, 150, 150);
+  padding-left: 7px;
+  /* use rem again */
+}

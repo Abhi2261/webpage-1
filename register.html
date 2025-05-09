@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reg-style.css" />
+    <!-- dont create new file css, cus this is small project, we only use 1 file css : style.css -->
+  </head>
+  <body>
+    <div class="login-box">
+      <div class="logo">
+        <img src="./images/logo.png" alt="brandlogo" />
+        <!-- using space, becaus it will show if image not showing, so user need that texk : Branch logo -->
+      </div>
+      <form action="submit">
+        <!-- for now, the action for form is : #, cus we dont have url / login to proces the form -->
+        <label for="username">Enter username</label>
+        <input
+          id="username"
+          class="loginitems style1"
+          type="text"
+          placeholder="Enter a username"
+        />
+        <!-- stay consisten at class name, the general template is using kebab-case : login-items -->
+        <!-- every input use have name property : name="username", this property will ned at process the form at javascript -->
+
+        <label for="password">Enter password</label>
+        <input
+          id="password"
+          class="loginitems style1"
+          type="text"
+          placeholder="Enter a password"
+        />
+        <!-- type of password input is password -->
+        <input
+          id="password-cnf"
+          class="loginitems style1"
+          type="text"
+          placeholder="Please conform password"
+        />
+
+        <span class="loginitems">
+          <!-- its better to use div as container/ wrapper -->
+          <input type="checkbox" id="rememberpassword" />
+          <!-- the general naming for varibel like id, for is camelcase : rememberPassword -->
+          <label for="rememberpassword">rememberpassword</label><br />
+        </span>
+        <div>
+          <button>Register</button>
+          <button>Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
