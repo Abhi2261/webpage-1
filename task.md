@@ -8,8 +8,16 @@
 ### Task 2
 
 - IN register.html
-- Create an page that show login page
+- Create an page that show register page
 - Must have and field (username, email, password, confirm password)
 - must have checkbox remeber me
 - then must have button register and login
 - Do teh same on login.html
+
+### Task 3
+
+- In login.html
+- Create an page that show login page
+- Input only 2 (username, password)
+- must have checkbox remeber me
+- Add login button
