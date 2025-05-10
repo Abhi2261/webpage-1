@@ -124,9 +124,10 @@ button{
 }
 .login-items{
     text-align: left;
-    padding-top: 1rem;
+    margin-top: 1.2rem;
 }
 .login-items label{
+  font-size: medium;
 
 }
 .login-items input{
@@ -138,8 +139,6 @@ button{
 .checkbox-postion{
     text-align: right;
     margin-top: 2rem;
-    
-    
 }
 
 .register-button{
@@ -156,6 +155,5 @@ button{
     color: rgb(0, 98, 255);
     font-weight: bold;
 }
-
 
 
