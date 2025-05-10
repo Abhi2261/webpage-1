@@ -155,5 +155,26 @@ button{
     color: rgb(0, 98, 255);
     font-weight: bold;
 }
+/* login page  */
+
+.checkbox-login{
+    display: flex;
+    height: 2rem;
+    line-height: 2rem;
+    gap: .6rem;
+    margin-top: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+.checkbox-login  input{
+    width: 1rem;
+    position: relative;
+}
+
+.login-items label{
+    margin-bottom: 1rem;
+}
 
 

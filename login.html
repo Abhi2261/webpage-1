@@ -4,8 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Login page</h1>
+  <body class="registration-body">
+   <div class="login-box">
+    <div class="logo">
+        <img src="./images/logo.png" alt="brandlogo" />
+
+      </div>
+
+      <form action="#">
+        <h1>Login</h1>
+        <div class="login-items">
+          <label for="username">Enter username</label>
+          <input
+            id="username"
+            class="style1"
+            type="text"
+            placeholder="Enter a username"
+            name="username"
+          />
+
+            <div class="login-items">
+          <label for="password">Enter password</label>
+          <input
+            id="password"
+            class="style1"
+            type="password"
+            placeholder="Enter a password"
+            name="password"
+          />
+
+          <div class="checkbox-login">
+          <input 
+          type="checkbox" 
+          id="rememberPassword" 
+          name="checkbox"
+          />
+          <label for="rememberPassword">Remember password</label><br />
+        </div>
+        </div>
+
+
+        </div>
+
+
+
+      </form>
+
+
+   </div>
+   
+
+
   </body>
 </html>
