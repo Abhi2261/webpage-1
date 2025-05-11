@@ -3,81 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- dont create new file css, cus this is small project, we only use 1 file css : style.css -->
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="registration-body">
-    <div class="login-box">
-
-      <div class="logo">
-        <img src="./images/logo.png" alt="brandlogo" />
-        <!-- using space, becaus it will show if image not showing, so user need that texk : Branch logo -->
+  <body class="authentication-body form-page">
+    <div class="form-container">
+      <div class="form-logo">
+        <img src="./images/logo.png" alt="Brand Logo" />
       </div>
-
-      
       <form action="#">
-        <!-- for now, the action for form is : #, cus we dont have url / login to proces the form -->
-        <h1>Register Your Account</h1>
-        <div class="login-items">
-          <label for="username">Enter username</label>
+        <h2>Create an Account</h2>
+        <div class="form-group">
+          <label for="reg-username">Username</label>
           <input
-            id="username"
-            class="style1"
             type="text"
-            placeholder="Enter a username"
+            id="reg-username"
             name="username"
+            placeholder="Choose a username"
           />
         </div>
-
-        <!-- stay consisten at class name, the general template is using kebab-case : login-items -->
-        <!-- every input use have name property : name="username", this property will ned at process the form at javascript -->
-        <div class="login-items">
-          <label for="password">Enter password</label>
+        <div class="form-group">
+          <label for="reg-password">Password</label>
           <input
-            id="password"
-            class="style1"
             type="password"
-            placeholder="Enter a password"
-            name="username"
+            id="reg-password"
+            name="password"
+            placeholder="Create a password"
           />
         </div>
-        <!-- type of password input is password -->
-        <div class="login-items">
-          <label for="passwordConfirm">Confirm Password</label>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
           <input
-            id="passwordConfirm"
-            class="style1"
             type="password"
-            placeholder="Please conform password"
-            name="username"
+            id="confirm-password"
+            name="confirmPassword"
+            placeholder="Confirm your password"
           />
-
         </div>
-        
-
-        <div class=" checkbox-postion">
-          <!-- its better to use div as container/ wrapper -->
-          <input 
-          type="checkbox" 
-          id="rememberPassword" 
-          name="username"
-          />
-          <!-- the general naming for varibel like id, for is camelcase : rememberPassword -->
-          <label for="rememberPassword">Remember password</label><br />
+        <div class="form-check">
+          <input type="checkbox" id="rememberRegister" name="remember" />
+          <label for="rememberRegister">Remember me</label>
         </div>
-
-        <div class="register-button">
-          <button>Register</button>
-        </div>
-
-        <div class="login-redirect">
-          <p> Already a customer ? : 
-            <span>
-              <a href="./login.html">Login</a>
-            </span>
-          </p>
-        </div>
+        <button type="submit" class="btn">Register</button>
+        <p class="redirect">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
       </form>
     </div>
   </body>
