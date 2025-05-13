@@ -25,5 +25,6 @@
 ### Task 4
 
 - Create middleware for the home.html page
-  -- Ensure that only logged-in users can access the home.html page
-  -- If they are not logged in or do not have an account, redirect them to the login/register page
+- Ensure that only logged-in users can access the home.html page
+- If they are not logged in or do not have an account, redirect them to the login/register page
+- Read scripts/script.js for more detail
