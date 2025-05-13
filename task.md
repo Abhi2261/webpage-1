@@ -21,3 +21,9 @@
 - Input only 2 (username, password)
 - must have checkbox remeber me
 - Add login button
+
+### Task 4
+
+- Create middleware for the home.html page
+  -- Ensure that only logged-in users can access the home.html page
+  -- If they are not logged in or do not have an account, redirect them to the login/register page
