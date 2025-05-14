@@ -27,11 +27,13 @@ We want to make sure:
 function checkLoginMiddleware() {
   const user = JSON.parse(localStorage.getItem("currentUser"));
 
-  if(!user){
-  window.location.href = "login.html";
+  if (!user) {
+    window.location.href = "login.html";
   }
 
-  //START HERE, DO VALIDATION, ENSURE USER LOGED-IN
+  // START HERE, DO VALIDATION, ENSURE USER LOGED-IN
+  // Ensure this only active in home.html
+  // because for now, we only protect the home.html
 }
 
 // RUN THE MIDDLEWARE WHEN PAGE IS LOADED
