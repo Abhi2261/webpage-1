@@ -26,8 +26,9 @@ We want to make sure:
 
 function checkLoginMiddleware() {
   const user = JSON.parse(localStorage.getItem("currentUser"));
+  const isHomepage = window.location.pathname.includes("home.html");
 
-  if (!user) {
+  if (!user && isHomepage) {
     window.location.href = "login.html";
   }
 
@@ -40,6 +41,15 @@ function checkLoginMiddleware() {
 window.addEventListener("DOMContentLoaded", () => {
   checkLoginMiddleware();
 });
+
+
+
+
+
+
+
+
+
 
 /*
 💡 NOTE:
