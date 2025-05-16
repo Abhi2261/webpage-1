@@ -24,6 +24,40 @@ We want to make sure:
 // 3. Run the function when the page is loaded
 // =======================
 
+function registerUser() {
+  const isRegisterPage = window.location.pathname.includes("register.html");
+  if (!isRegisterPage) return;
+
+  const registerForm = document.getElementById("registrationForm");
+
+  registerForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const userName = document.getElementById("reg-username").value;
+    const password = document.getElementById("reg-password").value;
+    const confirmPass = document.getElementById("confirm-password").value;
+
+    if (password !== confirmPass) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+    const user = {
+      userName,
+      password,
+    };
+
+    localStorage.setItem("registeredUser", JSON.stringify(user));
+    alert("Registration successful!");
+
+    // Optional: redirect to login page
+    window.location.href = "login.html";
+  });
+}
+
+
+
+
 function checkLoginMiddleware() {
   const user = JSON.parse(localStorage.getItem("currentUser"));
   const isHomepage = window.location.pathname.includes("home.html");
@@ -40,7 +74,9 @@ function checkLoginMiddleware() {
 // RUN THE MIDDLEWARE WHEN PAGE IS LOADED
 window.addEventListener("DOMContentLoaded", () => {
   checkLoginMiddleware();
+  registerUser();
 });
+
 
 
 
