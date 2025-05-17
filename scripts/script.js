@@ -57,11 +57,46 @@ function registerUser() {
 
 
 
+function loginauth() {
+  const isLoginpage = window.location.pathname.includes("login.html");
+  if (!isLoginpage) return;
+
+  const loginForm = document.getElementById("loginForm");
+
+  if (!loginForm) {
+    console.warn("loginForm not found.");
+    return;
+  }
+
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const loginUserName = document.getElementById("username").value;
+    const loginPassword = document.getElementById("password").value;
+
+    const storedUser = JSON.parse(localStorage.getItem("registeredUser"));
+
+    if (
+      storedUser &&
+      storedUser.userName === loginUserName &&
+      storedUser.password === loginPassword
+    ) {
+      localStorage.setItem("currentUser", JSON.stringify(storedUser));
+      alert("Login successful!");
+      window.location.href = "home.html";
+    } else {
+      alert("Invalid username or password.");
+    }
+  });
+}
+
+
+
 
 function checkLoginMiddleware() {
-  const user = JSON.parse(localStorage.getItem("currentUser"));
+  const user = JSON.parse(localStorage.getItem("registeredUser"));
   const isHomepage = window.location.pathname.includes("home.html");
-
+ 
   if (!user && isHomepage) {
     window.location.href = "login.html";
   }
@@ -75,6 +110,7 @@ function checkLoginMiddleware() {
 window.addEventListener("DOMContentLoaded", () => {
   checkLoginMiddleware();
   registerUser();
+  loginauth();
 });
 
 
